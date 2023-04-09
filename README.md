@@ -17,6 +17,6 @@ Clone the repository
 
 git clone 
 
-https://github.com/Ash-0601/Tic-Tac-Toe-Hackcodex2023.git
+*https://github.com/Ash-0601/Tic-Tac-Toe-Hackcodex2023.git*
 
 Start contributing
