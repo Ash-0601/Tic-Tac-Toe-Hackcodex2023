@@ -1,4 +1,4 @@
-package com.Ashutosh.tictactoe
+package com.ashutosh.tictactoe
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.ExperimentalAnimationApi
@@ -27,11 +27,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.Ashutosh.tictactoe.ui.theme.*
+import com.Ashutosh.tictactoe.*
+import com.Ashutosh.tictactoe.ui.theme.BlueCustom
+import com.Ashutosh.tictactoe.ui.theme.GrayBackground
+import com.synac.tictactoe.*
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
-fun GameScreen(viewModel: Lazy<GameViewModel>) {
+fun GameScreen(
+    viewModel: GameViewModel
+) {
 
     val state = viewModel.state
 
@@ -178,5 +183,7 @@ fun DrawVictoryLine(
 @Preview(showBackground = true)
 @Composable
 fun Prev() {
-    GameScreen(viewModel = GameViewModel())
+    GameScreen(
+        viewModel = GameViewModel()
+    )
 }

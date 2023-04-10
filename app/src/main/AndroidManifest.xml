@@ -12,10 +12,11 @@
         android:theme="@style/Theme.TicTacToe"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.ashutosh.tictactoe.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.TicTacToe">
+            android:theme="@style/Theme.TicTacToe"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
