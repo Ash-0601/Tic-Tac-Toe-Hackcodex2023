@@ -43,7 +43,7 @@ fun GameScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(GrayBackground)
+            .background(BG)
             .padding(horizontal = 30.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceEvenly
@@ -53,16 +53,16 @@ fun GameScreen(
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Text(text = "Player 'O' : ${state.playerCircleCount}", fontSize = 16.sp)
-            Text(text = "Draw : ${state.drawCount}", fontSize = 16.sp)
-            Text(text = "Player 'X' : ${state.playerCrossCount}", fontSize = 16.sp )
+            Text(text = "Player 'O' : ${state.playerCircleCount}", fontSize = 16.sp, fontFamily = FontFamily.SansSerif)
+            Text(text = "Draw : ${state.drawCount}", fontSize = 16.sp,fontFamily = FontFamily.SansSerif)
+            Text(text = "Player 'X' : ${state.playerCrossCount}", fontSize = 16.sp ,fontFamily = FontFamily.SansSerif)
         }
         Text(
             text = "Tic Tac Toe",
             fontSize = 50.sp,
             fontWeight = FontWeight.Bold,
             fontFamily = FontFamily.Cursive,
-            color = BlueCustom
+            color = RedVelvet
         )
         Box(
             modifier = Modifier
@@ -73,7 +73,7 @@ fun GameScreen(
                     shape = RoundedCornerShape(20.dp)
                 )
                 .clip(RoundedCornerShape(20.dp))
-                .background(GrayBackground),
+                .background(BG),
             contentAlignment = Alignment.Center
         ) {
             BoardBase()
@@ -136,8 +136,8 @@ fun GameScreen(
         ) {
             Text(
                 text = state.hintText,
-                fontSize = 24.sp,
-                fontStyle = FontStyle.Italic
+                fontSize = 26.sp,
+                fontStyle = FontStyle.Normal
             )
             Button(
                 onClick = {
@@ -148,7 +148,7 @@ fun GameScreen(
                 shape = RoundedCornerShape(5.dp),
                 elevation = ButtonDefaults.elevation(5.dp),
                 colors = ButtonDefaults.buttonColors(
-                    backgroundColor = BlueCustom,
+                    backgroundColor = RedVelvet,
                     contentColor = Color.White
                 )
             ) {
