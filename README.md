@@ -10,13 +10,9 @@ This is a simple game of Tic Tac Toe for Android
 Fork the repository
 
 Go to the directory
-
 cd Tic-Tac-Toe-Hackcodex2023
 
-Clone the repository
-
-git clone 
-
-*https://github.com/Ash-0601/Tic-Tac-Toe-Hackcodex2023.git*
+Clone the repository :
+git clone *https://github.com/Ash-0601/Tic-Tac-Toe-Hackcodex2023.git*
 
 Start contributing
